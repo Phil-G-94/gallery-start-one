@@ -1,10 +1,10 @@
 # Gallery Project (HTML/CSS/JS)
 
 ## Completed
-Check array prints correctly 
-Check object prints correctly 
-Work on Looping through images 
-Work on Wiring up the Darken/Lighten button  
+- Check array prints correctly 
+- Check object prints correctly 
+- Work on Looping through images 
+- Work on Wiring up the Darken/Lighten button  
 
 ## ToDo
 Create light/dark toggle switch for body

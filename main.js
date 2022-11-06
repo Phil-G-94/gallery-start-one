@@ -52,5 +52,4 @@ btn.addEventListener('click', () => {
   btn.textContent = 'Darken';
   overlay.style.backgroundColor = 'rgb(0,0,0,0)';
  };
-
 });
