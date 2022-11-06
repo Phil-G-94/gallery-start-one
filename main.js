@@ -54,15 +54,3 @@ btn.addEventListener('click', () => {
  };
 
 });
-
-
-/* 
-
-Check array prints correctly
-Check object prints correctly
-Work on Looping through images
-Work on Wiring up the Darken/Lighten button 
-
-*/
-
-
