@@ -4,6 +4,32 @@ const thumbBar = document.querySelector('.thumb-bar');
 const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
+/* Selecting input and body, changing background to white or black */
+const inputEl = document.querySelector('.input');
+const bodyEl = document.querySelector('body');
+
+inputEl.checked = JSON.parse(localStorage.getItem('mode'));
+
+function updateBody() {
+ if(inputEl.checked) {
+  bodyEl.style.background = 'black';
+  inputEl.style.color = 'white';
+ } else {
+  bodyEl.style.background = 'white';
+  inputEl.style.color = 'purple';
+ }
+};
+
+updateBody();
+
+function updateLocalStorage() {
+ localStorage.setItem('mode', JSON.stringify(inputEl.checked));
+};
+
+inputEl.addEventListener('input', () => {
+ updateBody();
+ updateLocalStorage();
+});
 /* Declaring the array of image filenames */
 
 const imgFiles = [
@@ -36,7 +62,7 @@ for(const image of imgFiles) {
   displayedImage.src = e.target.src;
   displayedImage.alt = e.target.alt;
  });
-}
+};
 
 
 /* Wiring up the Darken/Lighten button */
